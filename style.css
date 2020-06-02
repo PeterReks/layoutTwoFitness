@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Tenali+Ramakrishna&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+body {
+  margin:0px auto;
+  padding:0;
+  font-size:18px;
+  line-height:1.4;
+}
+
+h1, h2, h3, h4, ul {
+  margin:0px;
+
+}
+
+header {
+min-height:80px;
+display:flex;
+background-color: #37323E;
+justify-content:space-between;
+align-items:flex-end;
+padding: 0px 20px 0px 20px;
+color:white;
+}
+
+header h1 {
+  font-family:Poppins, Arial;
+  margin-left:20px;
+}
+
+header ul li, ul li a {
+  display:inline-block;
+  text-decoration:none;
+  color:white;
+  padding-right:20px;
+  font-family: 'Tenali Ramakrishna', Arial;
+  font-size:1.1em;
+}
+
+.showcase {
+  height:800px;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  margin-top:40px;
+  text-align:center;
+}
+
+.showcaseText {
+  width:35%;
+  font-size:1em;
+  font-family:Raleway, Poppins, Arial, sans-serif;
+  font-weight:500;
+  position:relative;
+  margin-top:50px;
+}
+
+.showcase img {
+  width:50%;
+  height:100%;
+}
+
+.showcaseText h1{
+  position:relative;
+  top:-50px;
+  font-size:1.5rem;
+  font-family: Poppins, Arial;
+  background-color:hsl(0, 0%, 87%);
+}
+
+.learnButton {
+  margin-top:20px;
+  margin-bottom:20px;
+  border:none;
+  border-radius:5px;
+  background-color:#AC3931;
+  height:3em;
+  width:150px;
+  color:white;
+  font-family: Arial;
+  font-weight:600;
+}
+
+
+.infoSection {
+  font-family:Poppins, Arial;
+  font-size:0.9em;
+  display:flex;
+  margin-top:150px;
+  justify-content:space-around;
+  margin-bottom:150px;
+}
+
+
+.infoBox {
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+  justify-content:space-between;
+  width:25%;
+  align-items:center;
+}
+
+.infoBox img {
+  width:90%;
+}
+
+.formContainer {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:50%;
+  height:80%;
+  margin:0px auto;
+  margin-bottom:50px;
+  border:2px solid #37323E;
+  background-size:cover;
+  background-image: linear-gradient( 115deg, rgba(204, 255, 255, 0.9), rgb(255, 204, 204, 0.7)), url("images/formPic.jpg");
+  font-weight:500;
+}
+
+.formContainer form {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content;
+  width:100%;
+  color:black;
+  font-family: 'Roboto';
+  font-size:1.1em;
+  text-shadow: 0px 2px white;
+  font-weight:500;
+}
+
+.formContainer form p {
+  text-align:center;
+}
+
+.formContainer form input {
+  width:70%;
+}
+
+#formButton {
+  margin-bottom:20px;
+  width:30%;
+  height:25px;
+  background-color:#AC3931;
+  color:white;
+  border:none;
+}
+
+footer {
+  background-color:black;
+  color:white;
+  text-align:center;
+  min-height:100px;
+  margin-top:30px;
+  padding-top:10px;
+}
+
+@media (max-width:1200px) {
+  .showcase img {
+      width:60%;
+      height:80%;
+    }
+
+    .showcaseText {
+      font-size:0.9em
+    }
+
+    .showcase h1 {
+      font-size:1.3em;
+    }
+
+    .showcase img {
+      width:50%
+    }
+
+    .infoSection {
+
+    }
+  }
+
+
+@media (max-width:900px) {
+  header {
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .showcase {
+    max-height:500px;
+    background-image:url("images/hero1.jpg");
+    background-size:cover;
+    margin:0px;
+  }
+
+  .showcase img {
+    display:none;
+  }
+
+  .showcaseText {
+    width:90%;
+    background-color:rgba(222, 222, 222, 0.7);
+  }
+
+  .showcase h1 {
+    top:-10px;
+  }
+
+  .formContainer {
+    width:70%
+  }
+}
+
+@media (max-width:500px) {
+  body {
+    font-size:12px;
+  }
+  header h1,
+  header ul,
+  header ul li,
+  header ul li a {
+    padding:0px;
+    margin:0px;
+  }
+
+  .showcase {
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position: -120px 0px;
+  }
+
+  .infoSection {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .infoBox {
+    width:80%;
+  }
+
+  .formContainer {
+    width:90%;
+    font-size:0.8em;
+  }
+
+  #formButton {
+    font-size:0.8em;
+  }
+}
